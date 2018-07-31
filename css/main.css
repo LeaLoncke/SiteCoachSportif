@@ -96,21 +96,62 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /* GENERAL */
+body {
+  color: #293540;
+}
+th, td {
+  text-align: center;
+}
 
+   /* BACKGROUND-COLOR */
+.bg-grey {
+  background-color: #293540;
+  }
+/*blue #7cbce2
+lightblue #e1ebf5
+orange #fc561f */
 
+  /* TEXT COLOR */
+.text-lightblue {
+  color: #e1ebf5;
+}
 
+  /* NAVBAR-ITEMS COLOR */
+.navbar-dark .navbar-nav .active .nav-link {
+  color: #e1ebf5;
+}
+.navbar-dark:hover .navbar-nav:hover .active:hover .nav-link:hover {
+  color: #7cbce2;
+}
 
+  /* CAROUSEL */
+.carouselTitle {
+  font-size: 30px;
+  color: #fc561f;
+}
+.carouselTitle:hover {
+  color: #fc561f;
+  text-decoration: none;
+}
+  /* ABOUT PAGE */
+  .float {
+    display: block;
+    margin: auto;
+  }
+  .text {
+    text-align: center;
+  }
 
+  /* PRICES */
+  .triangle {
+    list-style-type: disclosure-closed;
+  }
 
-
-
-
-
-
-
-
-
-
+  /* CONTACT */
+  .contact-form {
+    margin: 0.25rem 0;
+  }
 
 
 /* ==========================================================================
@@ -199,9 +240,51 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 576px) {
+     /* ABOUT */
+     .float {
+       float: left;
+       margin-right: 1%;
+     }
+     .text {
+       text-align: left;
+     }
+     /* CONTACT */
+     #gmap_canvas {
+       width: 400px !important;
+       height: 300px !important;
+     }
+     .calendar {
+       width: 400px !important;
+       height: 300px !important;
+     }
+   }
+
+    @media only screen and (min-width: 992px) {
+      .formCalendarMap {
+        display: flex;
+        flex-flow: row nowrap;
+      }
+      #gmap_canvas {
+        width: 500px !important;
+        height: 400px !important;
+      }
+      .calendar {
+        width: 500px !important;
+        height: 400px !important;
+        max-width: 600px;
+      }
+      .contact-form {
+        margin: 0.75rem 0;
+        padding: 13px;
+        font-size: 18px;
+      }
+      h5 {
+        text-align: center;
+      }
+    }
+
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
