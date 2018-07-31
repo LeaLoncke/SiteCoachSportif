@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
-  <meta name="description" content="">
+  <title>A.B Coach Sportif</title>
+  <meta name="description" content="You are looking for a home sports coach ? I am here. I'm a home sports coach  in running, fitness and fighting sports.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
@@ -13,6 +13,8 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -21,8 +23,94 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-grey">
+    <!-- Navbar Button for width < 992px -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- NavItems -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="prices.html">Prices <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav> <!-- CLOSING NAVBAR -->
+
+  <!-- CAROUSEL -->
+  <div id="carouselExampleIndicators" class="d-none  d-xl-block carousel slide" data-ride="carousel">
+    <!-- Carousel Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <!-- Carousel Images and Texts-->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/running-slider.jpg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block" style="color: black">
+          <a class="carouselTitle" href="#ancreRunning">Running</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/fitness-slider.jpg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block" style="color: black">
+          <a class="carouselTitle" href="#ancreFitness">Fitness</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/boxe-slider.jpg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block" style="color: black">
+          <a class="carouselTitle" href="#ancreFightingSports">Fighting Sport</a>
+        </div>
+      </div>
+    </div>
+    <!-- Arrow that brings the left carousel -->
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <!-- Arrow that brings the right carousel -->
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> <!-- CLOSING CAROUSEL -->
+
+  <article class="mx-auto my-3 text-justify col-12 col-sm-11 col-lg-10" id="ancreRunning">
+    <h5>Running</h5>
+    <img class="d-xl-none" src="img/running.png" alt="Running photo" style="display: block; margin: auto; max-width: 100%;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut varius orci. Proin erat ante, aliquet non diam eu, accumsan auctor diam. Cras et augue eu massa posuere viverra a sit amet lacus. Vivamus vel justo eu neque egestas dictum non eu risus. Etiam tempus commodo efficitur. Nulla varius tellus felis, vel vestibulum lectus fermentum id. Pellentesque non ex id ex faucibus imperdiet.</p>
+  </article>
+
+  <article class="mx-auto my-3 text-justify col-12 col-sm-11 col-lg-10" id="ancreFitness">
+    <h5>Fitness</h5>
+    <img class="d-xl-none" src="img/fitness.jpg" alt="Fitness photo" style="display: block; margin: auto; max-width: 100%;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut varius orci. Proin erat ante, aliquet non diam eu, accumsan auctor diam. Cras et augue eu massa posuere viverra a sit amet lacus. Vivamus vel justo eu neque egestas dictum non eu risus. Etiam tempus commodo efficitur. Nulla varius tellus felis, vel vestibulum lectus fermentum id. Pellentesque non ex id ex faucibus imperdiet.</p>
+  </article>
+
+  <article class="mx-auto my-3 text-justify col-12 col-sm-11 col-lg-10" id="ancreFightingSports">
+    <h5>Fighting sports</h5>
+    <img class="d-xl-none" src="img/boxe.jpg" alt="Fighting sports photo" style="display: block; margin: auto; max-width: 100%;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut varius orci. Proin erat ante, aliquet non diam eu, accumsan auctor diam. Cras et augue eu massa posuere viverra a sit amet lacus. Vivamus vel justo eu neque egestas dictum non eu risus. Etiam tempus commodo efficitur. Nulla varius tellus felis, vel vestibulum lectus fermentum id. Pellentesque non ex id ex faucibus imperdiet.</p>
+  </article>
+
+  <footer class="text-center bg-grey text-lightblue">Made by ...</footer>
+
+
+
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
@@ -35,6 +123,11 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <!-- Boostrap jQuerry, Popper.js and JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

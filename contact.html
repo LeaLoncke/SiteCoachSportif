@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>A.B Coach Sportif</title>
+  <meta name="description" content="You are looking for a home sports coach ? I am here. I'm a home sports coach  in running, fitness and fighting sports.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-grey">
+    <!-- Navbar Button for width < 992px -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- NavItems -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="prices.html">Prices <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav> <!-- CLOSING NAVBAR -->
+
+
+  <!-- FORM, GOOGLE CALENDAR AND MAP -->
+  <div class="formCalendarMap">
+
+    <!-- FORM -->
+    <form class="col-12 d-block mx-auto my-2 col-sm-10 col-md-8 col-lg-5 col-xl-6 form">
+      <input class="form-control contact-form" type="text" placeholder="First name">
+      <input class="form-control contact-form" type="text" placeholder="Last name">
+      <input class="form-control contact-form" type="email" placeholder="E-mail">
+      <textarea class="form-control contact-form" placeholder="Message" rows="3"></textarea>
+      <input class="form-control contact-form" type="button" value="Envoyer">
+    </form> <!-- CLOSING FORM -->
+
+    <!-- GOOGLE CALENDAR AND MAP -->
+    <div class="d-flex flex-row flex-wrap justify-content-around my-1 calendarMap ">
+
+        <!-- GOOGLE CALENDAR -->
+        <iframe class="p-2 calendar d-block" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=250&amp;wkst=2&amp;hl=fr&amp;bgcolor=%23ffffff&amp;src=ei6r1abi2aa1k5cg351s47qto8%40group.calendar.google.com&amp;color=%238D6F47&amp;ctz=Europe%2FParis" width="200" height="200" frameborder="0" scrolling="no"></iframe>
+              <!-- CLOSING GOOGLE CALENDAR -->
+        <!-- GOOGLE MAP -->
+        <div class="">
+        <script class="p-2" src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:100%;width:100%;display:flex;justify-content:center'><div id='gmap_canvas' style='height:200px;width:200px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(50.62925,3.057256000000052),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.62925,3.057256000000052)});infowindow = new google.maps.InfoWindow({content:'<strong>Titre</strong><br>Lille, France<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+      </div> <!-- CLOSING GOOGLE MAP -->
+
+      </div> <!-- CLOSING CALENDAR AND MAP -->
+
+    </div> <!-- CLOSING FORM, GOOGLE CALENDAR AND MAP -->
+
+  <footer class="text-center bg-grey text-lightblue">Made by ...</footer>
+
+
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <!-- Boostrap jQuerry, Popper.js and JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
